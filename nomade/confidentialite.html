@@ -20,7 +20,7 @@
 
 <section id="fr" lang="fr">
 <h1>Nomade – Politique de confidentialité</h1>
-<p class="date">Dernière mise à jour : 18 novembre 2026</p>
+<p class="date">Dernière mise à jour : 20 novembre 2026</p>
 <p>Nomade (paquet <code>fr.marioteck.nomade</code>) est une application Android payante (achat unique sur Google Play) éditée par Mario Teck, micro-entreprise française. Elle copie des données d'un téléphone Android à un autre. En résumé : <strong>vos données vont de votre ancien téléphone à votre nouveau téléphone, et nulle part ailleurs. L'éditeur n'en reçoit aucune.</strong></p>
 
 <h2>1. Données lues par l'application</h2>
@@ -44,7 +44,7 @@
 <p>Les données passent <strong>directement d'un téléphone à l'autre</strong>, par le Wi-Fi local (les deux téléphones sur le même réseau), par un réseau Wi-Fi créé par l'un des téléphones (section 2 bis) ou par un câble USB. Elles ne passent par aucun serveur, ni de l'éditeur ni d'un tiers, et ne transitent pas par Internet. L'autorisation « Internet » d'Android est déclarée parce qu'Android l'exige pour toute connexion réseau, y compris entre deux appareils d'un même réseau local ; Nomade ne s'en sert que pour cette liaison.</p>
 <p>La liaison est chiffrée : échange de clés ECDH (P-256), code à 6 chiffres affiché sur les deux écrans que vous comparez, puis chiffrement AES-256-GCM de tout ce qui est envoyé. Si les deux codes diffèrent, vous refusez et rien n'est envoyé.</p>
 <p>L'application ne contient ni publicité, ni outil de mesure d'audience, ni bibliothèque de suivi, et ne demande aucun compte. L'achat se fait sur Google Play, dont la politique s'applique à lui ; l'éditeur ne reçoit pas vos données de paiement.</p>
-<p>Nomade peut aussi envoyer vers un ordinateur équipé de Nomade pour Windows, par la même liaison chiffrée sur le réseau local ; ni les MMS, ni l'agenda, ni les documents, ni les applis, ni les notes ne vont vers un ordinateur.</p>
+<p>Nomade peut aussi envoyer vers un ordinateur équipé de Nomade pour Windows, par la même liaison chiffrée sur le réseau local . L'ordinateur reçoit alors les mêmes données que vous avez cochées (contacts, SMS, MMS, journal d'appels, agenda, photos, vidéos, sons, documents, notes et liste des applis), sauf les fichiers d'installation des applis. Elles sont rangées dans le dossier que vous choisissez sur cet ordinateur, restent sous votre seul contrôle et ne sont envoyées nulle part ailleurs.</p>
 <p>Nomade n'envoie aucun SMS ni MMS, à personne.</p>
 
 <h2>2 bis. Réseau sans box, installation par QR code</h2>
@@ -67,7 +67,7 @@
 <ul>
   <li>est limité à une liste d'applis de notes connues (Samsung Notes, Google Keep, Notes de Xiaomi, Bloc-notes de Huawei et d'Honor, Notes d'OPPO, realme, OnePlus et vivo, Bloc-notes de Tecno, Infinix et itel, Notally, Notally X, Quillpad, Notes) et, pendant la copie, à la seule appli que vous avez choisie ;</li>
   <li>lit le <strong>texte affiché à l'écran</strong> par cette appli (titres et corps des notes), fait défiler la liste et ouvre chaque note pour la lire ; il ne lit rien dans les autres applis, ne saisit rien, ne lit aucune donnée de paiement ni d'identification, et ne sert à rien d'autre ;</li>
-  <li>envoie ce texte uniquement à votre autre téléphone, par la liaison chiffrée ;</li>
+  <li>envoie ce texte uniquement à votre autre téléphone (ou à votre ordinateur équipé de Nomade pour Windows), par la liaison chiffrée ;</li>
   <li>s'éteint tout seul à la fin de la copie (ou si vous le coupez).</li>
 </ul>
 <p>Seul le texte est copié : images, dessins et notes verrouillées ne le sont pas. Sur le nouveau téléphone, les notes reçues sont gardées dans le stockage privé de Nomade jusqu'à ce que vous les créiez une à une dans votre appli de notes (par le partage de texte d'Android) ; une fois créée, il n'en reste qu'une empreinte (SHA-256) qui sert à ne pas la recréer. La désinstallation efface tout.</p>
@@ -101,7 +101,7 @@
 
 <section id="en" lang="en">
 <h1>Nomade – Privacy policy</h1>
-<p class="date">Last updated: November 18, 2026</p>
+<p class="date">Last updated: November 20, 2026</p>
 <p>Nomade (package <code>fr.marioteck.nomade</code>) is a paid Android app (one-time purchase on Google Play) published by Mario Teck, a French sole-proprietorship business. It copies data from one Android phone to another. In short: <strong>your data goes from your old phone to your new phone and nowhere else. The publisher receives none of it.</strong></p>
 
 <h2>1. Data the app reads</h2>
@@ -125,7 +125,7 @@
 <p>Data travels <strong>directly from one phone to the other</strong>, over the local Wi-Fi (both phones on the same network), over a Wi-Fi network created by one of the phones (section 2b) or over a USB cable. It goes through no server, neither the publisher's nor anyone else's, and does not travel over the Internet. The Android "Internet" permission is declared because Android requires it for any network connection, including between two devices on the same local network; Nomade uses it only for this link.</p>
 <p>The link is encrypted: ECDH key exchange (P-256), a 6-digit code displayed on both screens that you compare, then AES-256-GCM encryption of everything sent. If the two codes differ, you refuse and nothing is sent.</p>
 <p>The app contains no advertising, no analytics, no tracking library, and asks for no account. The purchase is made on Google Play, whose policy applies to it; the publisher does not receive your payment data.</p>
-<p>Nomade can also send to a computer running Nomade for Windows, over the same encrypted link on the local network; MMS, calendar, documents, apps and notes are never sent to a computer.</p>
+<p>Nomade can also send to a computer running Nomade for Windows, over the same encrypted link on the local network. The computer then receives the same data you ticked (contacts, SMS, MMS, call history, calendar, photos, videos, sounds, documents, notes and the list of apps), except app installation files. It is stored in the folder you choose on that computer, stays under your sole control and is sent nowhere else.</p>
 <p>Nomade sends no SMS or MMS to anyone.</p>
 
 <h2>2b. Network without a router, installation by QR code</h2>
@@ -148,7 +148,7 @@
 <ul>
   <li>is limited to a list of known note apps (Samsung Notes, Google Keep, Xiaomi Notes, Huawei and Honor Notepad, OPPO, realme, OnePlus and vivo Notes, Tecno, Infinix and itel Notepad, Notally, Notally X, Quillpad, Notes) and, during the copy, to the single app you chose;</li>
   <li>reads the <strong>text shown on screen</strong> by that app (note titles and bodies), scrolls the list and opens each note to read it; it reads nothing in other apps, types nothing, reads no payment or identification data, and is used for nothing else;</li>
-  <li>sends this text only to your other phone, over the encrypted link;</li>
+  <li>sends this text only to your other phone (or to your computer running Nomade for Windows), over the encrypted link;</li>
   <li>switches itself off at the end of the copy (or if you turn it off).</li>
 </ul>
 <p>Only the text is copied: images, drawings and locked notes are not. On the new phone, received notes are kept in Nomade's private storage until you create them one by one in your note app (through Android's text sharing); once created, only a fingerprint (SHA-256) remains, used to avoid creating it again. Uninstalling erases everything.</p>
