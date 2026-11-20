@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nomade – Confidentialité / Privacy policy</title>
+<style>
+  body { font: 16px/1.6 system-ui, sans-serif; max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 4rem; color: #1d2629; background: #fff; }
+  h1 { font-size: 1.7rem; margin-bottom: .2rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #cfd8dc; padding-bottom: .2rem; }
+  nav a { margin-right: 1rem; }
+  hr { margin: 3rem 0; border: 0; border-top: 2px solid #cfd8dc; }
+  .date { color: #546e7a; }
+  @media (prefers-color-scheme: dark) { body { background: #12191c; color: #e3ecef; } h2, hr { border-color: #35464c; } a { color: #7fe3c4; } .date { color: #9bb0b7; } }
+</style>
+</head>
+<body>
+
+<nav><a href="#fr">Français</a><a href="#en">English</a></nav>
+
+<section id="fr" lang="fr">
+<h1>Nomade – Politique de confidentialité</h1>
+<p class="date">Dernière mise à jour : 18 novembre 2026</p>
+<p>Nomade (paquet <code>fr.marioteck.nomade</code>) est une application Android payante (achat unique sur Google Play) éditée par Mario Teck, micro-entreprise française. Elle copie des données d'un téléphone Android à un autre. En résumé : <strong>vos données vont de votre ancien téléphone à votre nouveau téléphone, et nulle part ailleurs. L'éditeur n'en reçoit aucune.</strong></p>
+
+<h2>1. Données lues par l'application</h2>
+<p>Seulement si vous accordez l'autorisation correspondante, et seulement pour le transfert que vous lancez :</p>
+<ul>
+  <li><strong>Contacts</strong> (lecture et écriture des contacts) : noms, numéros, e-mails, adresses postales, photos de contact, organisations, notes, sites web, surnoms, dates, messagerie instantanée, liens de parenté, adresses SIP, favoris et groupes. Lus sur l'ancien téléphone, écrits sur le nouveau.</li>
+  <li><strong>SMS</strong> (lecture des SMS, sur l'ancien téléphone) : tous les SMS reçus et envoyés, avec numéro, texte, dates et état lu ou non lu. Le nouveau téléphone ne relit pas le contenu de ses SMS ; il vérifie seulement date, numéro et sens pour ne pas créer de doublon.</li>
+  <li><strong>MMS</strong> (même autorisation) : MMS reçus et envoyés, avec objet, participants (groupes compris), dates, texte, photos, vidéos, sons et autres pièces jointes. Ne sont pas copiés : les MMS non téléchargés, en cours d'envoi, échoués ou en brouillon, et les accusés de livraison ou de lecture.</li>
+  <li><strong>Journal d'appels</strong> (lecture et écriture du journal d'appels) : numéro, sens (reçu, passé, manqué), date et durée. Lu sur l'ancien téléphone, écrit sur le nouveau sans doublon.</li>
+  <li><strong>Agenda</strong> (lecture et écriture de l'agenda) : sur l'ancien téléphone, les événements (titre, lieu, description, dates, fuseau, répétitions, rappels, invités avec leurs noms et adresses e-mail, couleur) ; sur le nouveau, Nomade les écrit dans un agenda local « Agenda de l'ancien téléphone » et ne relit que les événements qu'il y a créés, pour éviter les doublons. Aucun e-mail d'invitation n'est envoyé.</li>
+  <li><strong>Photos, vidéos, sons et musique</strong> (accès aux photos et vidéos, aux fichiers audio, et à la position des photos) : les fichiers, leur nom, leur dossier, leur taille et leurs dates ; la position GPS des photos est conservée si vous autorisez l'accès à celle-ci.</li>
+  <li><strong>Documents et autres fichiers</strong> : sur Android 10 et plus, seulement les dossiers ou fichiers que vous choisissez vous-même dans le sélecteur d'Android ; sur Android 8 et 9, les dossiers Documents et Téléchargements. Nomade lit ces fichiers, avec leur nom, leur dossier, leur taille et leur date, pour les envoyer.</li>
+  <li><strong>Applis installées</strong> : la liste des applis qui ont une icône de lancement (nom, paquet, version, icône) et, si vous gardez la case cochée, les fichiers d'installation (APK) de ces applis, que Nomade lit sur l'ancien téléphone. Les données des applis ne sont jamais lues ni copiées. Nomade ne demande pas l'accès à la liste complète des applis.</li>
+  <li><strong>Notes</strong> (service d'accessibilité, seulement si vous le demandez) : voir la section 2 quater.</li>
+  <li><strong>Nom et place libre du téléphone</strong>, échangés avec l'autre téléphone pour afficher « En attente de… » et vérifier qu'il reste de la place.</li>
+  <li><strong>Réseau sans box</strong> : voir la section 2 bis (appareils à proximité, position sur Android 12 et moins).</li>
+</ul>
+<p>Chaque autorisation peut être refusée ou retirée dans les réglages d'Android : le reste de l'application continue de fonctionner.</p>
+
+<h2>2. Où vont les données</h2>
+<p>Les données passent <strong>directement d'un téléphone à l'autre</strong>, par le Wi-Fi local (les deux téléphones sur le même réseau), par un réseau Wi-Fi créé par l'un des téléphones (section 2 bis) ou par un câble USB. Elles ne passent par aucun serveur, ni de l'éditeur ni d'un tiers, et ne transitent pas par Internet. L'autorisation « Internet » d'Android est déclarée parce qu'Android l'exige pour toute connexion réseau, y compris entre deux appareils d'un même réseau local ; Nomade ne s'en sert que pour cette liaison.</p>
+<p>La liaison est chiffrée : échange de clés ECDH (P-256), code à 6 chiffres affiché sur les deux écrans que vous comparez, puis chiffrement AES-256-GCM de tout ce qui est envoyé. Si les deux codes diffèrent, vous refusez et rien n'est envoyé.</p>
+<p>L'application ne contient ni publicité, ni outil de mesure d'audience, ni bibliothèque de suivi, et ne demande aucun compte. L'achat se fait sur Google Play, dont la politique s'applique à lui ; l'éditeur ne reçoit pas vos données de paiement.</p>
+<p>Nomade peut aussi envoyer vers un ordinateur équipé de Nomade pour Windows, par la même liaison chiffrée sur le réseau local ; ni les MMS, ni l'agenda, ni les documents, ni les applis, ni les notes ne vont vers un ordinateur.</p>
+<p>Nomade n'envoie aucun SMS ni MMS, à personne.</p>
+
+<h2>2 bis. Réseau sans box, installation par QR code</h2>
+<ul>
+  <li><strong>Sans Wi-Fi commun</strong> : le nouveau téléphone crée un petit réseau Wi-Fi local (point d'accès local d'Android, sans Internet) et l'affiche sous forme de QR code ; l'ancien le rejoint. Android demande pour cela « Appareils à proximité » (Android 13 et plus, déclaré sans usage de la position) ou la <strong>position</strong> (Android 8 à 12, exigée par Android pour ce seul appel). Nomade ne lit ni n'enregistre jamais la position de l'appareil. Le réseau disparaît à la fin du transfert.</li>
+  <li><strong>Installer Nomade sur un téléphone sans Play Store</strong> : l'ancien téléphone crée le réseau et un petit serveur local, joignable uniquement par ce réseau, qui ne sert qu'un fichier : le fichier d'installation de Nomade lui-même (sans donnée personnelle). Un premier QR code fait rejoindre le réseau, un second télécharge ce fichier. Android demande d'autoriser l'installation depuis le navigateur. Le serveur et le réseau s'arrêtent quand vous quittez l'écran.</li>
+  <li><strong>Copie temporaire de Nomade</strong> : cette copie ne reçoit que d'un Nomade installé depuis le Play Store. À la fin du transfert, elle vous demande de la supprimer (fenêtre de désinstallation d'Android) et cherche à effacer le fichier d'installation téléchargé ; sinon, 24 h après son installation sans transfert, elle ne propose plus que sa suppression. Android peut empêcher Nomade de voir un fichier téléchargé par le navigateur : le fichier reste alors dans Téléchargements, sans donnée personnelle, et vous pouvez le supprimer vous-même.</li>
+</ul>
+
+<h2>2 ter. Nomade, appli SMS par défaut, temporairement</h2>
+<p>Android n'autorise l'écriture de SMS et de MMS que pour l'appli de messagerie par défaut. À la fin d'un transfert, sur le nouveau téléphone, Android vous demande si Nomade peut devenir cette appli le temps d'ajouter les messages reçus ; vous pouvez refuser, rien n'est alors ajouté. Ensuite Nomade rouvre votre appli habituelle, qui redemande à redevenir l'appli par défaut.</p>
+<ul>
+  <li>Les SMS qui vous arrivent pendant ce temps sont rangés dans la boîte de réception, non lus, pour que votre appli habituelle les retrouve.</li>
+  <li>Un MMS qui vous arrive pendant ce temps n'est <strong>pas téléchargé</strong> (Nomade ne sait pas le faire) ; une notification vous le dit. Demandez qu'on vous le renvoie.</li>
+  <li>Nomade n'a aucune autre utilité de ces droits : il ne compose ni n'envoie aucun message.</li>
+</ul>
+
+<h2>2 quater. Notes et service d'accessibilité</h2>
+<p>Les applis de notes ne permettent pas d'exporter leurs notes. Si vous touchez « Copier les notes » sur l'ancien téléphone, Nomade affiche d'abord une fenêtre qui explique ce qui est lu, puis vous demande d'activer, dans les réglages d'accessibilité d'Android, le service « Nomade - notes ». Ce service :</p>
+<ul>
+  <li>est limité à une liste d'applis de notes connues (Samsung Notes, Google Keep, Notes de Xiaomi, Bloc-notes de Huawei et d'Honor, Notes d'OPPO, realme, OnePlus et vivo, Bloc-notes de Tecno, Infinix et itel, Notally, Notally X, Quillpad, Notes) et, pendant la copie, à la seule appli que vous avez choisie ;</li>
+  <li>lit le <strong>texte affiché à l'écran</strong> par cette appli (titres et corps des notes), fait défiler la liste et ouvre chaque note pour la lire ; il ne lit rien dans les autres applis, ne saisit rien, ne lit aucune donnée de paiement ni d'identification, et ne sert à rien d'autre ;</li>
+  <li>envoie ce texte uniquement à votre autre téléphone, par la liaison chiffrée ;</li>
+  <li>s'éteint tout seul à la fin de la copie (ou si vous le coupez).</li>
+</ul>
+<p>Seul le texte est copié : images, dessins et notes verrouillées ne le sont pas. Sur le nouveau téléphone, les notes reçues sont gardées dans le stockage privé de Nomade jusqu'à ce que vous les créiez une à une dans votre appli de notes (par le partage de texte d'Android) ; une fois créée, il n'en reste qu'une empreinte (SHA-256) qui sert à ne pas la recréer. La désinstallation efface tout.</p>
+
+<h2>3. Ce qui est gardé sur le téléphone</h2>
+<ul>
+  <li><strong>SMS et MMS reçus, en attente</strong> : sur le nouveau téléphone, ils sont gardés dans le stockage privé de Nomade (inaccessible aux autres applis), chiffrés pendant le trajet mais non chiffrés une fois posés, jusqu'à leur écriture dans la messagerie du téléphone. Chaque fichier est alors effacé.</li>
+  <li><strong>Applis reçues, en attente</strong> : les fichiers des applis copiées sont gardés dans le stockage privé de Nomade jusqu'à leur installation, puis effacés. Vous confirmez chaque installation dans la fenêtre d'Android. Les données des applis ne sont jamais copiées.</li>
+  <li><strong>Notes reçues, en attente</strong> : voir 2 quater.</li>
+  <li><strong>Fichiers en cours de réception</strong> (photos, vidéos, sons, documents) : écrits sous un nom provisoire, puis renommés ; ceux d'un transfert interrompu sont effacés au lancement suivant.</li>
+  <li><strong>Agenda « Agenda de l'ancien téléphone »</strong> et ses événements : des données de votre téléphone comme les autres, que vous pouvez supprimer à tout moment.</li>
+  <li><strong>Journal technique</strong> : fichier <code>journal.log</code> dans le dossier de l'application (<code>Android/data/fr.marioteck.nomade/files</code>), limité à 1 Mo (puis renommé <code>journal.old.log</code>). Il contient la date et l'heure, les étapes du transfert (rôle, moyen de liaison, connexion, code confirmé, fin), des nombres et des tailles (nombre de contacts, de SMS, de MMS, d'appels, d'événements, de photos, de documents, d'applis, de notes, mégaoctets), et pour une erreur son type et les lignes de code concernées. Il ne contient ni nom de fichier, ni nom d'appli, ni titre, ni contact, ni numéro de téléphone, ni contenu de message ou de note, ni adresse IP, ni nom ou mot de passe de réseau. Il reste sur le téléphone ; l'éditeur ne le reçoit pas, sauf si vous l'envoyez (section 4). Il disparaît à la désinstallation.</li>
+</ul>
+<p>Les données copiées (contacts, messages, appels, événements, photos, documents, notes, etc.) sont, sur le nouveau téléphone, des données de votre téléphone comme les autres, rangées dans la Galerie, Contacts, Messages, le journal d'appels, l'Agenda, l'appli Fichiers, votre appli de notes, etc. Nomade n'en garde pas de copie, hormis les éléments en attente décrits ci-dessus.</p>
+
+<h2>4. « Signaler un problème »</h2>
+<p>Ce bouton prépare un e-mail adressé à <a href="mailto:mario07teck@gmail.com">mario07teck@gmail.com</a> dans votre propre application de messagerie. Rien n'est envoyé tant que vous n'avez pas relu et envoyé ce message vous-même. Il contient : le texte que vous avez écrit, la version de Nomade, le fabricant, le modèle et la version d'Android de votre téléphone, et, si vous laissez la case cochée, la fin du journal technique décrit plus haut (environ 60 000 derniers caractères), qui ne contient ni message, ni numéro, ni nom. Si aucune appli de messagerie n'est trouvée, Android propose d'autres applis de partage ; le message ne part qu'à votre initiative. L'éditeur utilise ces informations uniquement pour comprendre et corriger le problème, et les supprime une fois celui-ci traité.</p>
+
+<h2>5. Collecte par l'éditeur, partage, enfants</h2>
+<p>L'éditeur ne collecte, ne stocke et ne vend aucune donnée issue de l'application, ne les partage avec personne et ne les utilise pas pour de la publicité ni du profilage. Les seules informations qu'il peut recevoir sont celles d'un e-mail que vous choisissez de lui envoyer (section 4). Nomade ne s'adresse pas aux enfants.</p>
+
+<h2>6. Vos droits et suppression</h2>
+<p>L'éditeur ne détenant pas de données issues de l'application, il n'y a rien à lui demander d'effacer, sauf un éventuel e-mail de signalement : écrivez-lui pour le faire supprimer, ou pour exercer tout droit prévu par le RGPD (accès, rectification, effacement). Pour supprimer ce que Nomade garde sur le téléphone, désinstallez l'application. Les données déjà copiées sur le nouveau téléphone se suppriment avec les applis habituelles (Contacts, Messages, Téléphone, Agenda, Galerie, Fichiers, notes, etc.).</p>
+
+<h2>7. Modifications et contact</h2>
+<p>Cette politique peut évoluer avec l'application ; la date ci-dessus indique la dernière mise à jour.</p>
+<p>Éditeur : Mario Teck, micro-entreprise (France). Contact : <a href="mailto:mario07teck@gmail.com">mario07teck@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Nomade – Privacy policy</h1>
+<p class="date">Last updated: November 18, 2026</p>
+<p>Nomade (package <code>fr.marioteck.nomade</code>) is a paid Android app (one-time purchase on Google Play) published by Mario Teck, a French sole-proprietorship business. It copies data from one Android phone to another. In short: <strong>your data goes from your old phone to your new phone and nowhere else. The publisher receives none of it.</strong></p>
+
+<h2>1. Data the app reads</h2>
+<p>Only if you grant the matching permission, and only for the transfer you start:</p>
+<ul>
+  <li><strong>Contacts</strong> (read and write contacts): names, phone numbers, e-mail addresses, postal addresses, contact photos, organizations, notes, websites, nicknames, events, instant-messaging entries, relations, SIP addresses, favourites and groups. Read on the old phone, written on the new one.</li>
+  <li><strong>SMS</strong> (SMS read permission, on the old phone): all received and sent text messages, with number, text, dates and read status. The new phone does not read the content of its own SMS; it only checks date, number and direction to avoid duplicates.</li>
+  <li><strong>MMS</strong> (same permission): received and sent MMS, with subject, participants (groups included), dates, text, photos, videos, sounds and other attachments. Not copied: MMS that were not downloaded, are being sent, failed or are drafts, and delivery or read receipts.</li>
+  <li><strong>Call history</strong> (call log read and write): number, direction (incoming, outgoing, missed), date and duration. Read on the old phone, written on the new one without duplicates.</li>
+  <li><strong>Calendar</strong> (calendar read and write): on the old phone, events (title, place, description, dates, time zone, repeats, reminders, guests with their names and e-mail addresses, colour); on the new phone, Nomade writes them into a local "Calendar from old phone" calendar and only re-reads the events it created there, to avoid duplicates. No invitation e-mail is sent.</li>
+  <li><strong>Photos, videos, sounds and music</strong> (access to photos and videos, to audio files, and to photo location): the files, their name, folder, size and dates; the GPS location of photos is kept if you allow access to it.</li>
+  <li><strong>Documents and other files</strong>: on Android 10 and later, only the folders or files you yourself pick in Android's picker; on Android 8 and 9, the Documents and Downloads folders. Nomade reads these files, with their name, folder, size and date, to send them.</li>
+  <li><strong>Installed apps</strong>: the list of apps that have a launcher icon (name, package, version, icon) and, if you leave the box ticked, the installation files (APK) of these apps, which Nomade reads on the old phone. App data is never read or copied. Nomade does not request access to the full list of apps.</li>
+  <li><strong>Notes</strong> (accessibility service, only if you ask for it): see section 2d.</li>
+  <li><strong>Phone name and free space</strong>, exchanged with the other phone to display "Waiting for…" and to check there is enough room.</li>
+  <li><strong>Network without a router</strong>: see section 2b (nearby devices, location on Android 12 and earlier).</li>
+</ul>
+<p>Each permission can be refused or withdrawn in Android settings: the rest of the app keeps working.</p>
+
+<h2>2. Where the data goes</h2>
+<p>Data travels <strong>directly from one phone to the other</strong>, over the local Wi-Fi (both phones on the same network), over a Wi-Fi network created by one of the phones (section 2b) or over a USB cable. It goes through no server, neither the publisher's nor anyone else's, and does not travel over the Internet. The Android "Internet" permission is declared because Android requires it for any network connection, including between two devices on the same local network; Nomade uses it only for this link.</p>
+<p>The link is encrypted: ECDH key exchange (P-256), a 6-digit code displayed on both screens that you compare, then AES-256-GCM encryption of everything sent. If the two codes differ, you refuse and nothing is sent.</p>
+<p>The app contains no advertising, no analytics, no tracking library, and asks for no account. The purchase is made on Google Play, whose policy applies to it; the publisher does not receive your payment data.</p>
+<p>Nomade can also send to a computer running Nomade for Windows, over the same encrypted link on the local network; MMS, calendar, documents, apps and notes are never sent to a computer.</p>
+<p>Nomade sends no SMS or MMS to anyone.</p>
+
+<h2>2b. Network without a router, installation by QR code</h2>
+<ul>
+  <li><strong>No shared Wi-Fi</strong>: the new phone creates a small local Wi-Fi network (Android's local-only hotspot, without Internet) and shows it as a QR code; the old phone joins it. Android requires "Nearby devices" for this (Android 13 and later, declared as not used for location) or <strong>location</strong> (Android 8 to 12, required by Android for that one call). Nomade never reads or records the device's location. The network disappears when the transfer ends.</li>
+  <li><strong>Installing Nomade on a phone without the Play Store</strong>: the old phone creates the network and a small local server, reachable only through that network, which serves one file: Nomade's own installation file (no personal data). A first QR code joins the network, a second downloads that file. Android asks you to allow installation from the browser. The server and the network stop when you leave the screen.</li>
+  <li><strong>Temporary copy of Nomade</strong>: this copy only receives from a Nomade installed from the Play Store. At the end of the transfer it asks you to delete it (Android's uninstall window) and tries to erase the downloaded installation file; otherwise, 24 hours after installation with no transfer, it only offers its own deletion. Android may prevent Nomade from seeing a file downloaded by the browser: the file then stays in Downloads, with no personal data, and you can delete it yourself.</li>
+</ul>
+
+<h2>2c. Nomade as the default SMS app, temporarily</h2>
+<p>Android only lets the default messaging app write SMS and MMS. At the end of a transfer, on the new phone, Android asks whether Nomade may become that app for as long as it takes to add the received messages; you can refuse, and nothing is then added. Nomade then reopens your usual app, which asks to be the default again.</p>
+<ul>
+  <li>Text messages that arrive for you in the meantime are put in the inbox, unread, so that your usual app finds them.</li>
+  <li>An MMS arriving in the meantime is <strong>not downloaded</strong> (Nomade cannot do it); a notification tells you. Ask the sender to send it again.</li>
+  <li>Nomade has no other use for these rights: it composes and sends no message.</li>
+</ul>
+
+<h2>2d. Notes and the accessibility service</h2>
+<p>Note apps do not allow their notes to be exported. If you tap "Copy notes" on the old phone, Nomade first shows a window explaining what is read, then asks you to turn on the "Nomade - notes" service in Android's accessibility settings. This service:</p>
+<ul>
+  <li>is limited to a list of known note apps (Samsung Notes, Google Keep, Xiaomi Notes, Huawei and Honor Notepad, OPPO, realme, OnePlus and vivo Notes, Tecno, Infinix and itel Notepad, Notally, Notally X, Quillpad, Notes) and, during the copy, to the single app you chose;</li>
+  <li>reads the <strong>text shown on screen</strong> by that app (note titles and bodies), scrolls the list and opens each note to read it; it reads nothing in other apps, types nothing, reads no payment or identification data, and is used for nothing else;</li>
+  <li>sends this text only to your other phone, over the encrypted link;</li>
+  <li>switches itself off at the end of the copy (or if you turn it off).</li>
+</ul>
+<p>Only the text is copied: images, drawings and locked notes are not. On the new phone, received notes are kept in Nomade's private storage until you create them one by one in your note app (through Android's text sharing); once created, only a fingerprint (SHA-256) remains, used to avoid creating it again. Uninstalling erases everything.</p>
+
+<h2>3. What is kept on the phone</h2>
+<ul>
+  <li><strong>Received SMS and MMS, waiting</strong>: on the new phone, they are kept in Nomade's private storage (not accessible to other apps), encrypted in transit but not encrypted once stored, until they are written into the phone's messaging store. Each file is then deleted.</li>
+  <li><strong>Received apps, waiting</strong>: the files of copied apps are kept in Nomade's private storage until installed, then deleted. You confirm each installation in Android's window. App data is never copied.</li>
+  <li><strong>Received notes, waiting</strong>: see 2d.</li>
+  <li><strong>Files being received</strong> (photos, videos, sounds, documents): written under a temporary name, then renamed; those of an interrupted transfer are deleted at the next launch.</li>
+  <li><strong>"Calendar from old phone"</strong> and its events: data on your phone like any other, which you can delete at any time.</li>
+  <li><strong>Technical log</strong>: a <code>journal.log</code> file in the app's folder (<code>Android/data/fr.marioteck.nomade/files</code>), limited to 1 MB (then renamed <code>journal.old.log</code>). It contains the date and time, the transfer steps (role, link type, connection, code confirmed, end), numbers and sizes (count of contacts, SMS, MMS, calls, events, photos, documents, apps, notes, megabytes), and for an error, its type and the code lines involved. It contains no file name, app name, title, contact, phone number, message or note content, IP address, or network name or password. It stays on the phone; the publisher does not receive it unless you send it (section 4). It is removed when you uninstall the app.</li>
+</ul>
+<p>Copied data (contacts, messages, calls, events, photos, documents, notes, etc.) becomes ordinary data on your new phone, stored in the Gallery, Contacts, Messages, the call log, Calendar, the Files app, your note app, etc. Nomade keeps no copy, apart from the waiting items described above.</p>
+
+<h2>4. "Report a problem"</h2>
+<p>This button prepares an e-mail addressed to <a href="mailto:mario07teck@gmail.com">mario07teck@gmail.com</a> in your own mail app. Nothing is sent until you have reviewed and sent the message yourself. It contains: the text you wrote, Nomade's version, your phone's manufacturer, model and Android version, and, if you leave the box ticked, the end of the technical log described above (about the last 60,000 characters), which contains no message, number or name. If no mail app is found, Android offers other sharing apps; the message only leaves on your initiative. The publisher uses this information only to understand and fix the problem, and deletes it once the problem is dealt with.</p>
+
+<h2>5. Collection by the publisher, sharing, children</h2>
+<p>The publisher does not collect, store or sell any data from the app, shares it with no one and does not use it for advertising or profiling. The only information the publisher may receive is that of an e-mail you choose to send (section 4). Nomade is not aimed at children.</p>
+
+<h2>6. Your rights and deletion</h2>
+<p>Since the publisher holds no data from the app, there is nothing to ask it to delete, except a possible report e-mail: write to have it deleted, or to exercise any right provided by the GDPR (access, rectification, erasure). To delete what Nomade keeps on the phone, uninstall the app. Data already copied to the new phone is deleted with the usual apps (Contacts, Messages, Phone, Calendar, Gallery, Files, notes, etc.).</p>
+
+<h2>7. Changes and contact</h2>
+<p>This policy may change with the app; the date above shows the last update.</p>
+<p>Publisher: Mario Teck, sole-proprietorship business (France). Contact: <a href="mailto:mario07teck@gmail.com">mario07teck@gmail.com</a></p>
+</section>
+
+</body>
+</html>
